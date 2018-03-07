@@ -257,7 +257,7 @@ public class CashierInterface extends javax.swing.JFrame {
             DecimalFormat df = new DecimalFormat("#%");
 
             if (jRadioButton1.isSelected() == true) {
-                System.out.format("%30s%10s", "SUBTOTLA:", ("$" + new DecimalFormat("###.##").format(subtotal)));
+                System.out.format("%30s%10s", "SUBTOTAL:", ("$" + new DecimalFormat("###.##").format(subtotal)));
                 System.out.println();
                 for (Map.Entry<Integer, Double> entry : taxRepetitions.entrySet()) {
                     System.out.format("%-40s%-9s%-6s%-10s", (entry.getKey() + "-"
